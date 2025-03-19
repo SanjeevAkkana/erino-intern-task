@@ -38,7 +38,6 @@ const ExpenseList = ({ onExpenseDeleted, refresh }) => {
   return (
     <div className="bg-white rounded-lg">
          <div className="flex items-center gap-x-2 mb-3">
-          <p className="w-5 h-5 bg-blue-700 rounded-full"></p>
           <h2 className="text-xl tracking-wide text-gray-800">
           Your Expenses
           </h2>

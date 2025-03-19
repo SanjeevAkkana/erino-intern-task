@@ -70,7 +70,6 @@ const InsightsChart = ({ refresh }) => {
         <div className="bg-white rounded-xl w-full">
             <div className="w-full">
                 <div className="flex items-center gap-x-2 mb-3">
-                    <p className="w-5 h-5 bg-blue-700 rounded-full"></p>
                     <h2 className="text-xl tracking-wide text-gray-800">
                         Spending Insights
                     </h2>
