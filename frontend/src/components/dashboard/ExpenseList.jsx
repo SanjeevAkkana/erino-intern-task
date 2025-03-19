@@ -59,13 +59,13 @@ const ExpenseList = ({ onExpenseDeleted, refresh }) => {
                 transition={{ duration: 0.3 }}
                 className="flex justify-between items-center bg-white py-2 transition-all"
               >
-                <div className="flex items-start gap-3">
+                <div className="flex items-start gap-x-3">
                   <div className="p-2 rounded-full">
                     <IndianRupee size={18} className="text-blue-700" />
                   </div>
                   <div>
-                    <p className="text-base font-medium text-gray-800">{expense.category}</p>
-                    <p className="text-gray-600 font-bold text-sm">₹{expense.amount} - <span className="font-light">{new Date(expense.date).toLocaleDateString()}</span></p>
+                    <p className="text-base text-gray-800">{expense.category}</p>
+                    <p className="text-gray-600 font-semibold text-sm">₹{expense.amount} - <span className="font-light">{new Date(expense.date).toLocaleDateString()}</span></p>
                     {expense.description && (
                       <p className="text-gray-500 text-thin font-serif">{expense.description}</p>
                     )}
@@ -96,7 +96,7 @@ const ExpenseList = ({ onExpenseDeleted, refresh }) => {
             >
               <ChevronLeft size={18} /> Prev
             </button>
-            <span className="text-blue-700 font-medium">Page {currentPage} of {totalPages}</span>
+            <span className="text-blue-700 text-base">Page {currentPage} of {totalPages}</span>
             <button
               disabled={currentPage === totalPages}
               onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}

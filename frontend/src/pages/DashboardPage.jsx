@@ -48,7 +48,7 @@ const DashboardPage = () => {
                             localStorage.removeItem("token");
                             navigate("/login");
                         }}
-                        className="bg-red-500 cursor-pointer text-sm text-black px-3 py-2 rounded-2xl hover:bg-red-600 transition-all"
+                        className="bg-red-600 cursor-pointer text-sm text-white px-3 py-2 rounded-2xl hover:bg-red-700 transition-all"
                     >
                         Logout
                     </button>
