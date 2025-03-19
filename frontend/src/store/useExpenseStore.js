@@ -1,6 +1,7 @@
 import { create } from "zustand";
 
 const useExpenseStore = create((set) => {
+  
   const handleUnauthorized = (res) => {
     if (res.status === 401) {
       localStorage.removeItem("token");
